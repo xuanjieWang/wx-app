@@ -1,0 +1,56 @@
+<view style="text-align: center; color: #b9b9b9" wx:if="{{pageLoading}}">
+  <t-loading theme="circular" size="40rpx" text="加载中..." inherit-color />
+</view>
+<view class="home-page-header">
+  <view class="swiper-wrap">
+    <t-swiper wx:if="{{imgSrcs.length > 0}}" current="{{current}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" navigation="{{navigation}}" imageProps="{{swiperImageProps}}" list="{{imgSrcs}}" />
+  </view>
+</view>
+<view class="iconCarList">
+  <view class="iconList" wx:for="{{8}}" wx:for-item="item" wx:key="*this" wx:for-index="index">
+    <view class="infoCard">
+      <t-image t-class=" icon-card__img" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/1193.png" mode="aspectFill" lazy-load />
+      <view>{{titleList[index]}}</view>
+    </view>
+  </view>
+</view>
+<view class="title">
+  <view class="vertical-line"></view>
+  <view>我们只想做出好产品</view>
+</view>
+<view class="ImgPage-container">
+  <view class="info-one">
+    <view class="info-two">
+      <t-image t-class="image" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/简介123.png" mode="aspectFill" lazy-load />
+    </view>
+    <view class="info-thr">
+      <view class="info-for">
+        <t-image t-class="image" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/营销策划208.png" mode="aspectFill" lazy-load />
+      </view>
+      <view class="info-for">
+        <t-image t-class="image" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/工作汇报333.png" mode="aspectFill" lazy-load />
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="title">
+  <view class="vertical-line"></view>
+  <view>争做服务设计双满意</view>
+</view>
+<view class="ImgPage-container">
+  <view class="info-one">
+    <view class="info-two">
+      <t-image t-class="image" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/企业介绍672.png" mode="aspectFill" lazy-load />
+    </view>
+    <view class="info-thr">
+      <view class="info-for">
+        <t-image t-class="image" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/党政党建950.png" mode="aspectFill" lazy-load />
+      </view>
+      <view class="info-for">
+        <t-image t-class="image" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/微课教育173.png" mode="aspectFill" lazy-load />
+      </view>
+    </view>
+  </view>
+</view>
