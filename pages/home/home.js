@@ -120,17 +120,17 @@ Page({
   },
 
   goodListClickHandle(e) {
-    // const index = e.currentTarget.dataset.index;
-    // console.log(index)
-    const {
-      index
-    } = e.detail;
-    const {
-      spuId
-    } = this.data.goodsList[index];
-    wx.navigateTo({
-      url: `/pages/goods/details/index?spuId=${spuId}`,
-    });
+    const index = e.currentTarget.dataset.index;
+    console.log(index)
+    // const {
+    //   index
+    // } = e.detail;
+    // const {
+    //   spuId
+    // } = this.data.goodsList[index];
+    // wx.navigateTo({
+    //   url: `/pages/goods/details/index?spuId=${spuId}`,
+    // });
   },
 
   goodListAddCartHandle() {

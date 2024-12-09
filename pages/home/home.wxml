@@ -8,7 +8,7 @@
 </view>
 <view class="iconCarList">
   <view class="iconList" wx:for="{{8}}" wx:for-item="item" wx:key="*this" wx:for-index="index">
-    <view class="infoCard">
+    <view class="infoCard" bindtap="goodListClickHandle" data-index="{{index}}">
       <t-image t-class=" icon-card__img" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/1193.png" mode="aspectFill" lazy-load />
       <view>{{titleList[index]}}</view>
     </view>
