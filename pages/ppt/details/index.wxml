@@ -1,0 +1,3 @@
+<view class="pageInfo" wx:for="{{imgList}}" wx:for-item="item" wx:key="*this" wx:for-index="index">
+  <image class="imagePPT" src="{{imgList[index]}}" mode="aspectFill" lazy-load />
+</view>

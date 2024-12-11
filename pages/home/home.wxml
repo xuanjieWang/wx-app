@@ -8,9 +8,9 @@
 </view>
 <view class="iconCarList">
   <view class="iconList" wx:for="{{8}}" wx:for-item="item" wx:key="*this" wx:for-index="index">
-    <view class="infoCard" bindtap="goodListClickHandle" data-index="{{index}}">
-      <t-image t-class=" icon-card__img" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/1193.png" mode="aspectFill" lazy-load />
-      <view>{{titleList[index]}}</view>
+    <view class="infoCard" bindtap="goPPT" data-index="{{index}}">
+      <t-image t-class="icon-card__img" src="{{iconList[index]}}" mode="aspectFill" lazy-load />
+      <view class="iconFont">{{titleList[index]}}</view>
     </view>
   </view>
 </view>
@@ -20,35 +20,33 @@
 </view>
 <view class="ImgPage-container">
   <view class="info-one">
-    <view class="info-two">
+    <view bindtap="goPPT" class="info-two">
       <t-image t-class="image" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/简介123.png" mode="aspectFill" lazy-load />
     </view>
     <view class="info-thr">
-      <view class="info-for">
+      <view bindtap="goPPT" class="info-for">
         <t-image t-class="image" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/营销策划208.png" mode="aspectFill" lazy-load />
       </view>
-      <view class="info-for">
+      <view bindtap="goPPT" class="info-for">
         <t-image t-class="image" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/工作汇报333.png" mode="aspectFill" lazy-load />
       </view>
     </view>
   </view>
 </view>
-
-
 <view class="title">
   <view class="vertical-line"></view>
   <view>争做服务设计双满意</view>
 </view>
 <view class="ImgPage-container">
   <view class="info-one">
-    <view class="info-two">
+    <view bindtap="goPPT" class="info-two">
       <t-image t-class="image" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/企业介绍672.png" mode="aspectFill" lazy-load />
     </view>
     <view class="info-thr">
-      <view class="info-for">
+      <view bindtap="goPPT" class="info-for">
         <t-image t-class="image" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/党政党建950.png" mode="aspectFill" lazy-load />
       </view>
-      <view class="info-for">
+      <view bindtap="goPPT" class="info-for">
         <t-image t-class="image" src="http://xuanjie22.oss-cn-beijing.aliyuncs.com/blog/微课教育173.png" mode="aspectFill" lazy-load />
       </view>
     </view>

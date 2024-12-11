@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "案例展示",
+  "usingComponents": {
+    "t-loading": "tdesign-miniprogram/loading/loading"
+  }
+}
